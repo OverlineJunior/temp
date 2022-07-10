@@ -31,7 +31,7 @@ local function OnPlayerAdded(player: Player)
     end
 
     MagicService:AddMagic(player)
-    task.wait(2)
+    task.wait()
     MagicService:RemoveMagic(player)
 end
 

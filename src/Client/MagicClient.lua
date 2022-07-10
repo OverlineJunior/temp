@@ -2,7 +2,7 @@ local ReplicatedStorage = game:GetService('ReplicatedStorage')
 
 local Component = require(ReplicatedStorage.Packages.Component)
 
-local MagicClient = Component.new { Tag = 'MagicClient' }
+local MagicClient = Component.new { Tag = 'Magic' }
 
 
 function MagicClient:Construct()

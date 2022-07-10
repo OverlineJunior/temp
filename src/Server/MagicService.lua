@@ -10,11 +10,15 @@ function MagicService:AddMagic(player: Player)
     local tool = Instance.new('Tool')
     tool.Name = 'Magic'
     tool.Parent = player.Backpack
+
+    CollectionService:AddTag(tool, 'Magic')
 end
 
 
 function MagicService:RemoveMagic(player: Player)
     local tool = player.Backpack.Magic
+
+    CollectionService:RemoveTag(tool, 'Magic')
 end
 
 
